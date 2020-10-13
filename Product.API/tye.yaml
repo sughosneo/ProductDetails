@@ -1,0 +1,7 @@
+name: service
+
+services:
+
+- name: product-api   
+  project: Product.API.csproj 
+  

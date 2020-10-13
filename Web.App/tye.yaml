@@ -1,0 +1,10 @@
+name: service
+
+services:
+
+- name: web-app
+  project: Web.App.csproj
+  env:
+  - name: MY_CUSTOM_ENV
+    value: Sample env name
+  

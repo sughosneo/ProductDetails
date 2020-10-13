@@ -1,0 +1,15 @@
+name: productdetails
+
+extensions:
+- name: zipkin
+- name: seq
+  logPath: ./.logs
+
+services:
+- name: product-api   
+  project: Product.API/Product.API.csproj   
+- name: web-app
+  project: Web.App/Web.App.csproj
+  env:
+  - name: MY_CUSTOM_ENV
+    value: Sample env name

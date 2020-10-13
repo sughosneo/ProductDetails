@@ -1,0 +1,12 @@
+name: service
+
+extensions:
+- name: zipkin
+- name: seq
+  logPath: ./.logs
+
+services:
+- name: product-api   
+  include: Product.API/tye.yaml  
+- name: web-app
+  include: Web.App/tye.yaml
